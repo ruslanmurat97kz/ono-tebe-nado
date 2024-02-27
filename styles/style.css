@@ -1,1 +1,418 @@
-/* место для вашего кода */
+.text-regular {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-medium {
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: Raleway;
+}
+
+.header {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin: 92px 24px 95px 24px;
+    width: 1052px;
+    height: 105px;
+}
+
+.menu ul {
+    align-items: center;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu li:not(:first-child) {
+    margin-left: 31px;
+    list-style-type: circle;
+    text-decoration: underline;
+}
+
+
+.menu {
+    margin: 41px 30px 39px 26.52px;
+    height: 22px;
+    letter-spacing: 0.187px;
+    width: 397px;
+    display: flex;
+}
+
+.menu li:first-child {
+    list-style-type: none;
+}
+
+.logo-black {
+    background: url(../images/logo-black.svg);
+    width: 148px;
+    height: 105px;
+    background-repeat: no-repeat;
+    margin-left: 6px;
+}
+
+.pixel-perfect-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+    z-index: -99999999;
+}  
+
+.contacts li {
+    list-style-type: none;
+}
+
+.contacts li:not(:last-child){
+    text-decoration: underline;
+    letter-spacing: 0.2px;
+}
+
+.contacts li:first-child {
+    margin-bottom: 3px;
+}
+
+.contacts li:last-child{
+    margin-top: 5px;
+    word-wrap: break-word;
+    line-height: 22px;
+}
+
+.contacts {
+    display: grid;
+    width: 210px;
+    height: 98px;
+    margin-top: 7px;
+    margin-left: 180px;
+}
+
+.jambotron {
+  height: 757px;
+}
+
+.lotus-flower {
+  width: 1100px;
+  height: 757px;
+  background: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 /0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  width: 256px;
+  height: 51px;
+  left: 794px;
+  top: 655px;   
+}
+
+.title-text {
+    display: block;
+    line-height: 1;
+}
+
+.text-left {
+    padding-top: 175px; 
+    margin-left: 54px;
+    width: 316px;
+    height: 292px;
+    letter-spacing: 35px;
+    display: flex;
+}
+
+.text-left span:first-child { 
+    letter-spacing: 34px;
+}
+
+.text-left span:last-child { 
+    letter-spacing: 65px;
+}
+
+.text-right::first-letter {
+    letter-spacing: 65px;
+}
+
+.text-center {
+    margin-top: 13px;
+    margin-left: 339px;
+    width: 400px;
+    height: 100px;
+    letter-spacing: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-right {
+    margin-top: 20px;
+    margin-left: 637px;
+    width: 417px;
+    height: 100px;
+    letter-spacing: 37px;
+}
+
+.overlay span::after {
+    letter-spacing: 0.3px;
+}
+
+.jambotron-text-container {
+    display: flex;
+    padding-top: 130px;
+    align-items: center;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+.text-dark {
+    color: #000;
+}
+
+.jambotron-button {
+    width: 256px;
+    height: 51px;
+    border: 1px solid #FFF;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin-left: 77px;
+    letter-spacing: 0.3px;
+}
+
+.jambotron-text {
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 18px;
+    padding-left: 76px;
+    letter-spacing: 0.18px;
+}
+
+.lots-container {
+    width: 1100px;
+    padding: 179px 24px 0px 24px;
+}
+
+.lots {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27.5px;
+}
+
+.lots div {
+    width: 334px;
+    height: 563px;
+}
+
+.lots div h1 {
+    width: 254px;
+    font-size: 22px;
+    text-decoration-line: underline;
+
+    margin-top: 51px;
+    margin-left: 41px;
+    margin-right: 40px;
+    letter-spacing: 0.2px;
+}
+
+.lots div p {
+    font-size: 20px;
+    line-height: 120%; /* 24px */
+    width: 254px;
+    margin-left: 41px;
+}
+
+.first-lot {
+    margin-top: 242px;
+    height: 144px;
+}
+
+.last-lot {
+    margin-top: 97px;
+}
+
+.first-lot-image {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.second-lot-image {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.third-lot-image {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lots-title {
+    margin-left: 42px;
+    font-size: 40px;
+    width: 160px;
+    height: 47px;
+}
+
+.more {
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 30px;
+    padding-left: 41px;
+}
+
+.about {
+    width: 1052px;
+    height: 595px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 146px;
+}
+
+.about-elipse {
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-top: 35px;
+    margin-left: 71px;
+    background-image: url(../images/logo-white.svg); /* URL to your logo image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 62%;
+    background-repeat: no-repeat;
+}
+
+.about-text {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+    width: 693px;
+    height: 449px;
+    padding-left: 24px;
+}
+
+.about-text h1 {
+    padding-top: 136px;
+    font-size: 40px;
+}
+
+.about-text p:first-child {
+    letter-spacing: 0.2px;
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 24px; /* 120% */
+}
+
+.footer {
+    display: flex;
+    padding: 182px 53px 93px 51px;
+    font-size: 18px;
+    gap: 176px;
+}
+
+.footer-menu {
+    text-align: center;
+    width: 163px;
+    margin-left: 24px;
+}
+
+.footer-contacts li {
+    list-style-type: none;
+    margin-bottom: 4px;
+}
+
+.footer-contacts li:not(:last-child){
+    text-decoration: underline;
+    letter-spacing: 0.2px;
+}
+
+.footer-contacts li:last-child {
+    line-height: 23px;
+}
+
+.footer-contacts {
+    display: grid;
+    width: 220px;
+    height: 98px;
+    font-size: 18px;
+}
+
+.footer-menu ul li {
+    list-style-type: none;
+}
+
+.footer-menu ul li:not(:first-child) {
+    text-decoration: underline;
+}
+
+.contacts li:last-child{
+    margin-top: 5px;
+    word-wrap: break-word;
+    line-height: 22px;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.social-medias div {
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+}
+
+.social-medias div:not(:last-child) {
+    margin-left: 3px;
+ }
+
+
+.social-medias div:last-child {
+    margin-left: 3px;
+}
+
+.youtube {
+    background: url(../images/yt.svg);
+}
+
+.vk {
+    background: url(../images/vk.svg);
+}
+
+.pinterest {
+    background: url(../images/pinterest.svg);
+}
