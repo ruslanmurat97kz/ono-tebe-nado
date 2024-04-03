@@ -5,70 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <!-- <img class="pixel-perfect-image" src="./images/pixel-perfect.png" alt=""> -->
     <header>
-        <div class="header text-regular text-dark">
-            <div class="menu text-regular">
+        <div class="header-content text-dark">
+            <nav class="menu text-regular">
                 <ul>
                     <li><a>главная</a></li>
                     <li><a href="#lots">посмотреть лоты</a></li>
                     <li><a href="#about">об аукционе</a></li>
                 </ul>
-            </div>
-            <div class="logo-black"></div>
-            <div class="contacts">
-                <ul>
-                    <li>+9 999 555 5555</li>
-                    <li>info@sobaka.ge</li>
+            </nav>
+            <a href="https://ono-tebe-nado.ru">
+              <img class="logo-black" src="./images/logo-black.svg"></img>
+            </a>
+            <address class="contacts contacts-left">
+                <ul class="text-regular">
+                    <li><a href="tel:+9 999 555 5555">+9 999 555 5555</a></li>
+                    <li><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
                     <li>наб. Принсенграхт 263-265, Амстердам</li>
                 </ul>
-            </div>
+            </address>
         </div>
     </header>
     <main>
-        <section class="cover jambotron">
-            <div class="lotus-flower">
-                <div class="overlay">
-                    <div class="title-text text-bold text-white text-left">
-                        <span>О</span>
-                        <span>но</span>
-                    </div>
-                    <div class="title-text text-bold text-white text-center">
+        <section class="lotus-section lotus-flower image overlay">
+                <!-- <div class="title-text text-bold text-white text-left">
+                    <span>О</span>
+                    <span>но</span>
+                </div>
+                <div class="title-text text-bold text-white text-center">
+                    <span>теб</span>
+                    <span>е</span>
+                </div>
+                <div class="title-text text-bold text-white text-right">
+                    <span>н</span>
+                    <span>адо</span>
+                    <span>о</span>
+                </div> -->
+                <h1 class=" text-bold text-white">
+                    <span class="title-text title-left">
+                        <span>oн</span>
+                        <span>о</span>
+                    </span>
+                    <span class="title-text title-center">
                         <span>теб</span>
                         <span>е</span>
+                    </span>
+                    <span class="title-text">
+                        <span>н</span>
+                        <span>ад</span>
+                        <span>о</span>
+                    </span>
+                </h1>
+                <div class="jambotron-text-container">
+                    <div class="text-regular text-white jambotron-text">
+                        <p>Аукцион вещей, в которые никто не верил</p>
                     </div>
-                    <div class="title-text text-bold text-white text-right">надо</div>
-                    <div class="jambotron-text-container">
-                        <div class="text-regular text-white jambotron-text">Аукцион вещей, в которые никто не верил</div>
-                        <div class="text-medium text-white jambotron-button">Сделать ставку</div>
-                    </div>
+                    <div class="text-medium text-white jambotron-button">Сделать ставку</div>
                 </div>
-                
-            </div>
-            <!-- <img src="./images/lotus-flower.svg" alt="Lotus Flower" width="1100px" height="757px"> -->
-            
         </section>
         <section class="lots-container" id="lots">
             <h1 class="text-dark text-bold lots-title">Лоты</h1>
             <div class="text-white lots">
-                <div class="first-lot-image ">
+                <ul>
+                  <li class="image list-lot-image overlay">
                     <h1 class="text-bold">Фильм режиссёра, который бросил киношколу</h1>
-                    <p class="first-lot text-regular">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-                </div>
-                <div class="second-lot-image ">
+                    <p class="lot-text text-regular">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+                  </li>
+                  <li class="image list-lot-image overlay">
                     <h1 class="text-bold">Книга, где описан один скучный день из жизни рекламного агента</h1>
                     <p class="text-regular">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-                </div>
-                <div class="third-lot-image">
+                  </li>
+                  <li class="image list-lot-image overlay">
                     <h1 class="text-bold">Картина, которую повторит даже 5-летний сын маминой подруги</h1>
-                    <p class="text-regular last-lot">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...  Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-                </div>
-                
+                    <p class="lot-text text-regular">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков...  Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+                  </li>
+                </ul>
             </div>
             <div>
                 <p class="text-dark text-regular more">посмотреть больше</p>
@@ -78,32 +94,37 @@
             <div class="about-elipse"></div>
             <div class="text-dark about-text">
                 <h1 class="text-bold">Об аукционе</h1>
-                <div class="text-regular">
-                    <p>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+                <div class="text-regular about-content-text">
+                    <p>
+                        <span>Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата.</span>
+                        <span>Наши лоты вообще не должны были попасть ни на один аукцион.</span> 
+                        <span>Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок?</span>
+                        <span>Кому нужны все эти странные вещи, созданные любителями?</span>
+                    </p>
                     <p>Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми.</p>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer text-regular text-dark">
-        <div class="footer-contacts">
-            <ul>
-                <li>+9 999 555 5555</li>
-                <li>info@sobaka.ge</li>
+        <address class="contacts">
+            <ul class="text-regular">
+                <li><a href="tel:+9 999 555 5555">+9 999 555 5555</a></li>
+                <li><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
                 <li>наб. Принсенграхт 263-265, Амстердам</li>
             </ul>
-        </div>
-        <div class="footer-menu">
+        </address>
+        <nav class="footer-menu text-regular">
             <ul>
                 <li>главная</li>
                 <li><a href="#lots">посмотреть лоты</a></li>
-                <li><a href="#about">об аукционеa</a></li>
+                <li><a href="#about">об аукционе</a></li>
             </ul>
-        </div>
+        </nav>
         <div class="social-medias">
-          <div class="youtube"></div>
-          <div class="vk"></div>
-          <div class="pinterest"></div>
+            <img class="social-medias-image" src="./images/yt.svg"></img>
+            <img class="social-medias-image" src="./images/vk.svg"></img>
+            <img class="social-medias-image" src="./images/pinterest.svg"></img>
         </div>
     </footer>
 </body>
