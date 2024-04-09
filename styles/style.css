@@ -1,14 +1,12 @@
 .text-regular {
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .text-medium {
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
 }
 
@@ -34,7 +32,7 @@
   gap: 31.2px;
 }
 
-.menu li:not(:first-child) {
+.menu-header-link-active {
   list-style-type: circle;
   text-decoration: underline;
 }
@@ -44,10 +42,6 @@
   letter-spacing: 0.187px;
   max-width: 397px;
   display: flex;
-}
-
-.menu li:first-child {
-  list-style-type: none;
 }
 
 .logo-black {
@@ -97,8 +91,7 @@
 .overlay {
   background-blend-mode: overlay;
   background-color: rgb(0 0 0 /0.6);
-} 
-
+}
 
 .title-text {
   font-size: 100px;
@@ -198,13 +191,13 @@
   flex-wrap: wrap;
 }
 
-.lots ul li {
+.lots-item {
   max-width: 334px;
   padding-bottom: 1px;
   flex-grow: 1;
 }
 
-.lots ul li h1 {
+.lots-item-title {
   max-width: 255px;
   font-size: 22px;
   text-decoration-line: underline;
@@ -214,7 +207,7 @@
   margin-right: 40px;
 }
 
-.lots ul li p {
+.lots-item-text {
   font-size: 20px;
   line-height: 120%;
   max-width: 254px;
@@ -225,7 +218,6 @@
 .list-lot-image:nth-of-type(1) {
   background-image: url(../images/card-lot-01.jpg);
 }
-
 
 .list-lot-image:nth-of-type(2) {
   background-image: url(../images/card-lot-02.jpg);
@@ -272,16 +264,24 @@
 
 .about-elipse {
   width: 240px;
+  height: 240px;
   border-radius: 50%;
   background-color: #000;
-  margin: 35px 46px 321px 71px;
-  background-image: url(../images/logo-white.svg);
-  background-position: center;
+  margin: 37px 46px 321px 72px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: 61%;
-  background-repeat: no-repeat;
+}
+
+.about-logo {
+  height: 114px;
+  width: 148px;
+}
+
+.about-title-text {
+  font-size: 40px;
+  padding-top: 136px;
 }
 
 .about-text {
@@ -294,9 +294,10 @@
 }
 
 .about-content-text {
- display: flex;
- gap: 24px;
- flex-direction: column;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  margin-bottom: 1px;
 }
 
 .about-text h1 {
@@ -312,7 +313,7 @@
 
 .footer {
   display: flex;
-  padding: 181px 0px 93px 51px;
+  padding: 180px 0px 93px 51px;
   font-size: 18px;
   gap: 177px;
 }
@@ -323,12 +324,13 @@
   margin-left: 39px;
 }
 
-.footer-menu ul li {
+.list-item-no-bullit {
   list-style-type: none;
 }
 
-.footer-menu ul li:not(:first-child) {
+.link-active {
   text-decoration: underline;
+  list-style-type: none;
 }
 
 .social-medias {
@@ -341,5 +343,5 @@
 
 .social-medias-image {
   max-width: 48px;
-  background-repeat: no-repeat;
+  max-height: 48px;
 }
